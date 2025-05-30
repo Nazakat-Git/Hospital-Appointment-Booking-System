@@ -1,49 +1,84 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/M5rgUwZx)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19673663)
-# Data Visualization Dashboard
+Hospital Appointment Booking System
 
-Template repository for project work in Fundamentals of Programming.
+This is a simple Python-based, JupyterLab-built prototype Hospital Appointment Booking System which facilitates patients to book their medical appointment with the option to choose a speciality, and desired date and time.
+Features
 
-This is a simple Flask web application that demonstrates data visualization using Plotly. The project includes three types of charts: Bar Chart, Pie Chart, and Line Chart.
+    Patient number input feature along with validation
+    Only registered patients, who have been allocated a patient number by the hospital, can book the appointments.
 
-## Running the Application
+    Select medical specialty
+    Patients can select their relevant speciality that they want to book an appointment with.
 
-1. Clone the repository:
+    Filter available appointment dates and times
+    Only available appointment dates and times will appear to the patients to avoid multiple patients getting the same appointment and exhausting the medical system.
 
-```bash
-git clone https://github.com/unberath/Template_Flask.git
-cd Template_Flask
-```
+    Confirm or cancel appointments
+    As a final stage, patients are given a confirm and cancel option to double-check before they go ahead and book the appointment.
 
-2. Install dependencies:
+    Prevents double-booking for the same patient
+    When the patient enters their patient number, if they already have an appointment, the system will inform them that they already have an appointment. This feature will avoid double bookings.
 
-```bash
-pip install -r requirements.txt
-```
+Purpose
 
-3. Run the application:
+A traditional appointment system would require patients to contact the hospital either by phone, email, or by walking into the hospital to book their medical appointment. The hospital will offer the patient an appointment as per hospital availability which the patient will agree to take. This has two scenarios:
 
-```bash
-python app.py
-```
+    Administrative workload for the hospital.
+    Less choice for the patient who will take the appointment either without realising they have other commitments — which happens often — or they will knowingly take the appointment to secure the spot thinking they will reschedule their other commitment. This will result in the patient cancelling their appointment last minute and the appointment slot, which could have been utilised, will go unused.
 
-Visit [http://localhost:8000/](http://localhost:8000/) in your browser to view the data visualization dashboard.
-Visit [http://localhost:8000/test](http://localhost:8000/test) for simple user input.
+Considering how hospitals are struggling to issue appointments to the patients and the long waiting lists of patients waiting for their appointment, as well as to run the healthcare system more efficiently, we would want to run the clinics to their maximum capacity where all the appointment slots are taken and patients are seen so the flow of the patient is maintained.
 
-## Project Structure
+An efficient healthcare system means that healthcare facility is extended to the maximum number of people and care facility provided in due course of time.
+Scope
 
-- `app.py`: Flask application with sample data and chart creation.
-- `templates`: Folder for all HTML templates.
-	- `dashboard.html`: HTML template for rendering the charts.
-	- `my_form.html`: HTML template for basic user input.
-- `data`: Folder for csv or json data.
-- `resources`: Folder for additional documents like the presentation.
+This system facilitates patients where they can book their appointments from the comfort of their home, which improves customer care and access. It will reduce the cancellations as patients will be able to book their appointments as per their availability.
 
+Furthermore, patients with disabilities will also be able to book their appointments without approaching the hospital — as an effective healthcare system offers maximum access.
 
-## Charts
+The system is user-friendly and offers intuitive support. The users can simply perform one step at a time and the next step will appear — as a step-by-step led process without any confusion or overwhelming information all at once.
+Product Review
 
-- **Bar Chart:** Demonstrates a simple bar chart using Plotly Express.
-- **Pie Chart:** Shows a basic pie chart using Plotly.
-- **Line Chart:** Displays a line chart with markers using Plotly Subplots.
+It is a simple appointment system and not heavily featured — unlike other appointment systems in the market. As this system is a prototype, it can be further improved according to the needs of the hospital. For example, some hospitals might require more specialities to be included or would like to customise specialities.
 
-Feel free to modify the `data` dictionary in `app.py` to use your own dataset.
+The system avoids duplications as well as functions as a reminder. For example, if a patient forgets their appointment and they try to rebook their appointment, as they input their patient number and click on 'Book', the system will remind them when they have their appointment and at what time. This benefits the hospital as well as they don't get duplicated appointments.
+
+The confirm/cancel feature allows patients to rethink before confirming.
+
+The times and dates only appear when they are available — as booked slots disappear from the patient view.
+Further Improvements/Additions
+
+There are future additions that can be implemented to add further features and improvement to the current system such as:
+
+    Registering patient online
+    The system only allows existing patients with hospital number/patient number to be able to book appointments.
+
+    Cancelling appointments
+    Patients cannot cancel their appointment; they will have to contact the hospital to cancel their appointment. So, this limitation can be improved by allowing patients to be able to cancel their appointments. As this system is aimed at reducing cancellations, it does not include a cancellation feature.
+
+    Referrals
+    This system does not allow first-time patients. So, a feature can be included where patients can upload their referral, register themselves, and book their appointment once their referral has been triaged and a patient number is issued by the hospital.
+
+    Medical Records (EHR)
+    The system can include a feature where patients can access their medical records and access can be attached to their patient number — however, this feature will require two-way authentication or additional security features as well as patient consent to protect patient data.
+
+    Specialities
+    Further specialities can be added, and parallel clinic appointments can also be added — some clinics run in parallel such as diabetes clinic and weight management clinics might run the same day, same time as hospitals have more doctors and more rooms to see the patients. The current system has every weekday assigned to one speciality. However, we can include many specialities for a single day and even divide them into morning/afternoon clinics.
+
+    Administration access
+    Administration can be granted access to amend, update, and even book urgent appointments.
+
+    Doctor's duty roster
+    The system can be synchronised with the doctor roster and appointment slots can be created as per their availability.
+
+Technological Stack
+
+    Python 3
+    IPyWidgets
+    IPDisplay
+    JupyterLab
+
+Screenshots
+
+Screenshot
+
+    Screenshot of the Appointment Booking UI in JupyterLab
+
