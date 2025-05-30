@@ -96,7 +96,7 @@ There are future additions that can be implemented to add further features and i
 
 ## Screenshots
 
-![Screenshot](Combined screenshots appt interface.png)
+![Screenshot](Combined%20screenshots%20appt%20interface.png)
 > _Screenshot of the Appointment Booking UI in JupyterLab_
 
 
