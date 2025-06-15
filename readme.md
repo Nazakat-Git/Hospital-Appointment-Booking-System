@@ -56,34 +56,6 @@ The confirm/cancel feature allows patients to rethink before confirming.
 
 The times and dates only appear when they are available — as booked slots disappear from the patient view.
 
----
-
-## Further Improvements/Additions
-
-There are future additions that can be implemented to add further features and improvement to the current system such as:
-
-- **Registering patient online**  
-  The system only allows existing patients with hospital number/patient number to be able to book appointments.
-
-- **Cancelling appointments**  
-  Patients cannot cancel their appointment; they will have to contact the hospital to cancel their appointment. So, this limitation can be improved by allowing patients to be able to cancel their appointments. As this system is aimed at reducing cancellations, it does not include a cancellation feature.
-
-- **Referrals**  
-  This system does not allow first-time patients. So, a feature can be included where patients can upload their referral, register themselves, and book their appointment once their referral has been triaged and a patient number is issued by the hospital.
-
-- **Medical Records (EHR)**  
-  The system can include a feature where patients can access their medical records and access can be attached to their patient number — however, this feature will require two-way authentication or additional security features as well as patient consent to protect patient data.
-
-- **Specialities**  
-  Further specialities can be added, and parallel clinic appointments can also be added — some clinics run in parallel such as diabetes clinic and weight management clinics might run the same day, same time as hospitals have more doctors and more rooms to see the patients. The current system has every weekday assigned to one speciality. However, we can include many specialities for a single day and even divide them into morning/afternoon clinics.
-
-- **Administration access**  
-  Administration can be granted access to amend, update, and even book urgent appointments.
-
-- **Doctor's duty roster**  
-  The system can be synchronised with the doctor roster and appointment slots can be created as per their availability.
-
----
 
 ## Technological Stack
 
